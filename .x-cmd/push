@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+git remote remove gitee 2>/dev/null
+git remote add gitee git@gitee.com:AAAben/MonacoForPowerline.git
+git push gitee
+
+git remote remove github 2>/dev/null
+git remote add github git@github.com:Zhengqbbb/MonacoForPowerline.git
+git push github
+
+git push gitee main
+git push github main
