@@ -8,10 +8,10 @@ ____font_install_run() {
     local font_dir
     local _source_path
     local REMOTE="${REMOTE:-github}"
-    local GUSER="${REMOTE:-zhengqbbb}"
-    _source_path="$( cd "$( dirname "$0" )" && pwd )"
-    env git clone --depth=1 "https://${REMOTE}.com/${GUSER}/MonacoForPowerline.git" "$_source_path" || {
-        printf "\033[0;31m[qb]: Error git clone of MonacoForPowerline repo failed[0m\n"
+    local G_USER="${G_USER:-zhengqbbb}"
+    _source_path="$( cd "$(dirname "$0")" && pwd )"
+    env git clone "https://${REMOTE}.com/${G_USER}/MonacoForPowerline.git" "$_source_path/MonacoForPowerline" || {
+        printf "\033[0;31m[qb]: Error git clone of MonacoForPowerline repo failed\033[0m\n"
         return 1
     }
     if test "$(uname)" = "Darwin" ; then
