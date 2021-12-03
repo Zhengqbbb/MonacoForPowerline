@@ -1,7 +1,7 @@
 # Monaco For Powerline
 - Like powerline font install to set Monaco for powerline font
-- base: [sungkwangsong-gist](https://gist.github.com/sungkwangsong/56e749d0527313386119b0fefd5dba78)
-> 下载方式和powerline font类似，但我做了一键化处理，故只用跑一条脚本即可，感谢sungkwangsong的gist，是他将powerline符号添加到Monaco之中。
+- base: [lujiacn-gist](https://gist.github.com/lujiacn/32b598b1a6a43c996cbd93d42d466466)
+> 下载方式和powerline font类似，但我做了一键化处理，故只用跑一条脚本即可，感谢lujiacn的gist，将powerline符号添加到Monaco之中。
 
 # Monaco Font
 Monaco is a monospaced sans-serif typeface designed by Susan Kare and Kris Holmes. It ships with macOS and was already present with all previous versions of the Mac operating system. Is my favorite terminal font.
@@ -31,7 +31,7 @@ eval "_REMOTE=gitee _G_USER=AAAben" "$(curl https://gitee.com/AAAben/MonacoForPo
 
 ---
 
-<img src="https://tvax3.sinaimg.cn/large/6ccee0e1gy1gx0hfa9e67j225k14ie81.jpg" alt="企业微信20211203-112617@2x" width="2792" data-width="2792" data-height="1458">
+<img src="https://tvax1.sinaimg.cn/large/6ccee0e1gy1gx0vw6gmj5j22yg19we82.jpg" alt="af9c57cb89ae0a1f81514e86604f78a3 (1)" width="3832" data-width="3832" data-height="1652">
 
 ## Set the font
 - Windows Terminal: Open settings,Find the default value in the right column, select the appearance, and then select the font "Monaco for Powerline"
