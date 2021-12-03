@@ -9,7 +9,7 @@ ____font_install_run() {
     fi
     local _font_dir
     local _source_path
-    _source_path="$( cd "$(dirname "$0")" && pwd )"
+    _source_path="$( pwd )"
     env git clone "https://${_REMOTE}.com/${_G_USER}/MonacoForPowerline.git" "$_source_path/MonacoForPowerline" || {
         printf "\033[0;31m[qb]: Error git clone of MonacoForPowerline repo failed\033[0m\n"
         return 1
@@ -36,7 +36,7 @@ ____font_printf_settings() {
     printf "\033[1;33m%s \033[32m%s \033[4;33m%s\033[0m \033[1;32m%s\033[0m\n\n" \
         "Windows(Need to install manually):" \
         "open folder to find MonacoForPowerline.ttf:" \
-        "$_font_dir" \
+        "$_font_dir/MonacoForPowerline" \
         "Use the right click, Choose installation"
     printf "\033[1;33m%s \033[32m%s\033[1;36m %s\033[0m\n" \
         "Windows Terminal:" \
