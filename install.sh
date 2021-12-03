@@ -31,7 +31,7 @@ ____font_install_run() {
 }
 
 ____font_printf_settings() {
-    printf "\033[1;32m%s\033[0m\n\n" "---- Now you need to manually set the terminal font ----"
+    printf "\n\033[1;32m%s\033[0m\n\n" "---- Now you need to manually set the terminal font ----"
     printf "\033[1;33m%s \033[32m%s\033[1;36m%s\033[0m\n" \
         "VSCode:" \
         "Editor \`setting.json\` add json item " \
