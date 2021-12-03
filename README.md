@@ -18,7 +18,7 @@ eval "$(curl https://raw.githubusercontent.com/Zhengqbbb/MonacoForPowerline/main
 ### Use gitee install | 国内gitee安装源
 > use gitee. base curl and git
 ```sh
-eval "REMOTE=gitee G_USER=AAAben" "$(curl https://gitee.com/AAAben/MonacoForPowerline/raw/main/install.sh)"
+eval "_REMOTE=gitee _G_USER=AAAben" "$(curl https://gitee.com/AAAben/MonacoForPowerline/raw/main/install.sh)"
 ```
 
 #### PS: Windows Install and set Windows Terminal
