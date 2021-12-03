@@ -15,23 +15,34 @@ Monaco is a monospaced sans-serif typeface designed by Susan Kare and Kris Holme
 eval "$(curl https://raw.githubusercontent.com/Zhengqbbb/MonacoForPowerline/main/install.sh)"
 ```
 
-## 国内gitee安装源
+### Use gitee install | 国内gitee安装源
 > use gitee. base curl and git
 ```sh
 eval "REMOTE=gitee G_USER=AAAben" "$(curl https://gitee.com/AAAben/MonacoForPowerline/raw/main/install.sh)"
 ```
 
+#### PS: Windows Install and set Windows Terminal
+- Windows need to find the ttf file and right click to install font, so I hope you use **git bash**
+
+- I personally think that using [cascadia-code fonts](https://github.com/microsoft/cascadia-code) in the windows environment is much better than Monaco fonts. He also has patch fonts supported by powerline symbols. I also integrated his download method[cascadia-code installation repo](https://github.com/Zhengqbbb/CascadiaForPowerline).
+> windows系统需要找到ttf资源文件手动右键安装字体,我希望你是使用git bash去运行本脚本这样你会获得相应的提示
+
+> 个人觉得在windows环境下使用cascadia-code字体比Monaco字体好看很多，他也有powerline符号的支持的补丁字体，我也集成了他的下载方式:[cascadia-code installation repo](https://github.com/Zhengqbbb/CascadiaForPowerline).
+
+---
+
 <img src="https://tvax3.sinaimg.cn/large/6ccee0e1gy1gx0hfa9e67j225k14ie81.jpg" alt="企业微信20211203-112617@2x" width="2792" data-width="2792" data-height="1458">
 
 ## Set the font
+- Windows Terminal: Open settings,Find the default value in the right column, select the appearance, and then select the font "Monaco for Powerline"
+- Mac Terminal: Use `command + ,` And then find font, Choose: "Monaco for Powerline"
+- Ubuntu Terminal: Use mouse right click to open the setting(P), Find text, And then choose: "Monaco for Powerline Bold"
 - VSCode: Editor `setting.json` add json item "terminal.integrated.fontFamily": "Monaco for Powerline"
 - iTerm2: Use `command + ,` Find Profiles - Text - Font, And then choose: "Monaco for Powerline"
-- Mac Terminal: Use `command + ,` And then find font, Choose: "Monaco for Powerline"
-- Ubuntu Terminal: Use the right click to open the setting(P), Find text, And then choose: "Monaco for Powerline Bold"
 
 > More settings: https://github.com/Zhengqbbb/MonacoForPowerline/issues/1
 
-> 字体安装完成后是需要手动设置终端软件的字体设置的。当然如果你是windows系统我希望你是[windows-terminal](https://github.com/microsoft/terminal)嵌WSL的方式去使用终端，因为那才是真正基于posix shell终端
+> 字体安装完成后是需要手动设置终端软件的字体设置的。
 
 #### If you think my installation script is nice, you can give me a star
 > 如果你觉得安装脚本写的不错的话，可以给我一个star哦！~

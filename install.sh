@@ -28,30 +28,39 @@ ____font_install_run() {
         fc-cache -f "$_font_dir"
     fi
     printf "\033[1;32m[qb]: Monaco For Powerline fonts installed to \033[4;33m$_font_dir\033[0m\n"
+    ____font_printf_settings
 }
 
 ____font_printf_settings() {
-    printf "\n\033[1;32m%s\033[0m\n\n" "---- Now you need to manually set the terminal font ----"
-    printf "\033[1;33m%s \033[32m%s\033[1;36m%s\033[0m\n" \
-        "VSCode:" \
-        "Editor \`setting.json\` add json item " \
-        "\"terminal.integrated.fontFamily\": \"Monaco for Powerline\""
-    printf "\033[1;33m%s \033[32m%s\033[1;36m%s\033[0m\n" \
-        "iTerm2:" \
-        "Use \`command + ,\` Find Profiles - Text - Font, And then choose: " \
+    printf "\n\033[1;32m%s\033[0m\n" "---- Now you need to manually set the terminal font ----"
+    printf "\033[1;33m%s \033[32m%s \033[4;33m%s\033[0m \033[1;32m%s\033[0m\n\n" \
+        "Windows(Need to install manually):" \
+        "open folder to find MonacoForPowerline.ttf:" \
+        "$_font_dir" \
+        "Use the right click, Choose installation"
+    printf "\033[1;33m%s \033[32m%s\033[1;36m %s\033[0m\n" \
+        "Windows Terminal:" \
+        "Open settings,Find the default value in the right column, select the appearance, and then select the font" \
         "\"Monaco for Powerline\""
-    printf "\033[1;33m%s \033[32m%s\033[1;36m%s\033[0m\n" \
+    printf "\033[1;33m%s \033[32m%s\033[1;36m %s\033[0m\n" \
         "Mac Terminal:" \
-        "Use \`command + ,\` And then find font, Choose: " \
+        "Use \`command + ,\` And then find font, Choose:" \
         "\"Monaco for Powerline\""
-    printf "\033[1;33m%s \033[32m%s\033[1;36m%s\033[0m\n" \
+    printf "\033[1;33m%s \033[32m%s\033[1;36m %s\033[0m\n" \
         "Ubuntu Terminal:" \
-        "Use the right click to open the setting(P), Find text, And then choose: " \
+        "Use mouse right click to open the setting(P), Find text, And then choose:" \
         "\"Monaco for Powerline Bold\""
-    printf "\n\033[1;36m%s\033[4;33m%s\033[0m\n" \
-        "More settings: "\
+    printf "\033[1;33m%s \033[32m%s\033[1;36m %s\033[0m\n" \
+        "VSCode:" \
+        "Editor \`setting.json\` add json item" \
+        "\"terminal.integrated.fontFamily\": \"Monaco for Powerline\""
+    printf "\033[1;33m%s \033[32m%s\033[1;36m %s\033[0m\n" \
+        "iTerm2:" \
+        "Use \`command + ,\` Find Profiles - Text - Font, And then choose:" \
+        "\"Monaco for Powerline\""
+    printf "\n\033[1;36m%s\033[4;33m %s\033[0m\n" \
+        "More settings:"\
         "https://github.com/Zhengqbbb/MonacoForPowerline/issues/1"
 }
 
 ____font_install_run
-____font_printf_settings
