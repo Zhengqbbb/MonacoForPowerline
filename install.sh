@@ -24,9 +24,9 @@ ____font_install_run() {
     fi
     cp "$_source_path/MonacoForPowerline/MonacoForPowerline.ttf" "$font_dir/"
     if which fc-cache >/dev/null 2>&1 ; then
-        printf "\033[0;33m[qb]: Resetting font cache, this may take a moment...\033[0m\n"
+        printf "\033[1;33m[qb]: Resetting font cache, this may take a moment...\033[0m\n"
         fc-cache -f "$font_dir"
     fi
-    printf "\033[1;32m[qb]: Powerline fonts installed to \033[4;33m$font_dir\033[0m\n"
+    printf "\033[1;32m[qb]: Monaco For Powerline fonts installed to \033[4;33m$font_dir\033[0m\n"
 }
 ____font_install_run
